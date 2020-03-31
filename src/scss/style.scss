@@ -1,0 +1,51 @@
+// BS Abstract
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+//BS reboot
+@import "~bootstrap/scss/reboot";
+
+// BS grid
+@import "~bootstrap/scss/grid";
+
+//BS components
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/modal";
+
+//fontello
+@import "fontello/fontello";
+
+//slick
+@import "plugin/slick";
+@import "plugin/player";
+
+// abstract
+@import 'abstract/variables';
+
+//base
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/ui';
+
+//custom components
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/content';
+@import 'components/footer';
+@import 'components/references__nav';
+@import 'components/references__content';
+@import 'components/references-item';
+@import 'components/view-item';
+@import 'components/modals';
+@import 'components/comments';
+@import 'components/profile';
+
+//pages
+@import 'pages/login';
+@import 'pages/my-share';
+@import 'pages/share-all';
+@import 'pages/playlist';
+@import 'pages/article-page';
+@import 'pages/404';

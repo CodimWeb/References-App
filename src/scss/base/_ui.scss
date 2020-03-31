@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+    background: $gray-100;
+}
+  
+
+.app {
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.wrapper--login {
+    overflow-x: visible;
+}
+
+.finded {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+        background: rgba(85, 104, 254, 0.2);
+        z-index: -1;
+    }
+}
+
+.container {
+    @media (min-width: 576px) {
+        max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 718px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1190px;
+    }
+
+    @media (min-width: 1280px) {
+        max-width: 1280px;
+    }
+    @media (min-width: 1350px) {
+        max-width: 1350px;
+    }
+
+}
+
+.full-width {
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+// for large table only
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .container {
+        padding: 0 10px;
+        max-width: 970px;
+    }
+
+    .row {
+        margin: 0 -10px;
+
+        >div {
+            padding: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapper {
+        padding-bottom: 90px !important;
+    }
+
+    .wrapper-404 {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px !important;
+    }
+
+    .wrapper--login {
+        padding-bottom: 0 !important;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,52 @@
+.h1 {
+    font-family: $oswald;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: $gray-850;
+    letter-spacing: 0.8px;
+}
+
+.h3 {
+    font-family: $oswald;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: $gray-850;
+    letter-spacing: 0.7px;
+}
+
+.h4 {
+    font-family: $oswald;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $gray-850;
+}
+
+.h5 {
+    font-family: $oswald;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $gray-850;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+    color: $blue;
+
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

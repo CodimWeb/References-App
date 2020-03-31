@@ -1,0 +1,127 @@
+.btn {
+    display: inline-block;
+    outline: none !important;
+    height: 50px;
+    text-align: center;
+    font-family: $oswald;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    line-height: 50px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.btn-primary {
+    background: linear-gradient(98.06deg, #5568FE 4.31%, #6D55FE 40.2%);
+
+    &:hover {
+        background: linear-gradient(98.06deg, #4C5DE2 4.31%, #604AE7 40.2%);
+    }
+
+    &:active {
+        background: linear-gradient(86.29deg, #6943D4 14.39%, #6914D5 80.01%);
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #6D55FE;
+    border: 1px solid #6D55FE;
+    transition: 0.25s ease-in-out;
+    line-height: 48px;
+
+    &:hover {
+        background: #F4F3FD;
+        color: #5F4BDC;
+        border-color: #5F4BDC;
+    }
+
+    &:active {
+        background: #DFDAFF;
+        color: #5F4BDC;
+        border-color: #5F4BDC;
+    }
+}
+
+.btn-md {
+    width: 144px;
+    max-width: 144px;
+}
+
+.btn-sm {
+    width: 110px;
+    max-width: 110px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-menu {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 27px;
+    padding: 0;
+    margin: 0 1px 0px auto;
+    border: none;
+    background: transparent;
+
+    .line {
+        display: block;
+        margin-bottom: 5px;
+        width: 36px;
+        height: 3px;
+        background: $gray-850;
+        transform: skewX(-45deg);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .line-bottom {
+        width: 17px;
+        margin-left: 14px;
+        transition: 0.2s linear;
+    }
+
+    &:hover {
+
+        .line-bottom {
+            margin: 0;
+            width: 36px;
+        }
+    }
+}
+
+.btn-share {
+    width: 338px;
+    margin-top: 22px;
+}
+
+
+@media (max-width: 767px) {
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .btn-sm {
+        width: 100px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 12px;
+    }
+}
